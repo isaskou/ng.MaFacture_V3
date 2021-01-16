@@ -8,6 +8,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './_components/public/home/home.component';
 import { HomeBannerComponent } from './_components/public/home/home-banner/home-banner.component';
 import { FooterComponent } from './_components/core/footer/footer.component';
+import { AppMainComponent } from './_components/protected/app-main/app-main.component';
+import { DashboardComponent } from './_components/protected/dashboard/dashboard.component';
+import { HomeFeaturesComponent } from './_components/public/home/home-features/home-features.component';
+import { HomeFeatureCardComponent } from './_components/public/home/home-feature-card/home-feature-card.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +19,11 @@ import { FooterComponent } from './_components/core/footer/footer.component';
     LoginComponent,
     HomeComponent,
     HomeBannerComponent,
-    FooterComponent
+    FooterComponent,
+    AppMainComponent,
+    DashboardComponent,
+    HomeFeaturesComponent,
+    HomeFeatureCardComponent
   ],
   imports: [
     BrowserModule,
