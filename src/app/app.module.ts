@@ -12,6 +12,9 @@ import { AppMainComponent } from './_components/protected/app-main/app-main.comp
 import { DashboardComponent } from './_components/protected/dashboard/dashboard.component';
 import { HomeFeaturesComponent } from './_components/public/home/home-features/home-features.component';
 import { HomeFeatureCardComponent } from './_components/public/home/home-feature-card/home-feature-card.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { UserLoginService } from './_services/user-login.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -28,9 +31,14 @@ import { HomeFeatureCardComponent } from './_components/public/home/home-feature
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    UserLoginService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
