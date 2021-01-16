@@ -15,6 +15,8 @@ import { HomeFeatureCardComponent } from './_components/public/home/home-feature
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { UserLoginService } from './_services/user-login.service';
 import { HttpClientModule } from '@angular/common/http';
+import { SidebarComponent } from './_components/protected/app-main/sidebar/sidebar.component';
+import { NavbarComponent } from './_components/protected/app-main/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { HttpClientModule } from '@angular/common/http';
     AppMainComponent,
     DashboardComponent,
     HomeFeaturesComponent,
-    HomeFeatureCardComponent
+    HomeFeatureCardComponent,
+    SidebarComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

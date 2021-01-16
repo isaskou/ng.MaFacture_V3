@@ -17,8 +17,11 @@ export class UserLoginService {
     private router: Router
   ) {
     this.currentUser = new UserModel()
+    this.currentUser.prenom='Isabel'
+    this.currentUser.nom='Skou'
     this.currentUser.email = 'isabel.skou@yahoo.fr'
     this.currentUser.password = 'test'
+    this.currentUser.role='Admin'
   }
 
   login(user: UserModel) {
@@ -35,7 +38,11 @@ export class UserLoginService {
   }
 
   userIsConnected(): boolean{
-    return true;
+    if(this.currentUser !== undefined && this.currentUser !== null)
+    {
+      return this.currentUser.isConnected
+    }
+    return false;
   }
 
 }

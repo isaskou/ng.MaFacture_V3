@@ -1,0 +1,7 @@
+<nav>
+    <ul>
+        <li *ngIf="userService.userIsConnected()">
+            <span>Bonjour {{userService.currentUser.prenom}}</span>
+        </li>
+    </ul>
+</nav>
