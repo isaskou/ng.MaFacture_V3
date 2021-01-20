@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {MatSliderModule} from '@angular/material/slider';
+import {MatSidenavModule} from '@angular/material/sidenav';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,6 +18,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { UserLoginService } from './_services/user-login.service';
 import { HttpClientModule } from '@angular/common/http';
 import { NavbarComponent } from './_components/protected/app-main/navbar/navbar.component';
+import { SidebarComponent } from './_components/protected/app-main/sidebar/sidebar.component';
+import { ContentComponent } from './_components/protected/app-main/content/content.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +33,8 @@ import { NavbarComponent } from './_components/protected/app-main/navbar/navbar.
     HomeFeaturesComponent,
     HomeFeatureCardComponent,
     NavbarComponent,
+    SidebarComponent,
+    ContentComponent,
   ],
   imports: [
     BrowserModule,
@@ -36,7 +42,10 @@ import { NavbarComponent } from './_components/protected/app-main/navbar/navbar.
     BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatSliderModule,
+    MatSidenavModule
+    
   ],
   providers: [
     UserLoginService
