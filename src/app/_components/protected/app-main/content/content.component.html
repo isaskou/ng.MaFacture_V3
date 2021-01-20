@@ -1,0 +1,88 @@
+<div class="container-fluid">
+    <div class="row">
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+            <div
+                class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                
+                <h1 class="h2">Dashboard</h1>
+                <form class="form-inline">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+                <div class="btn-toolbar mb-2 mb-md-0">
+                    <div class="btn-group mr-2">
+                        <button class="btn btn-sm btn-outline-secondary">Export</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-5 col-md-12">
+
+            </div>
+            <div class="pt-3 pb-2 mb-3 border-bottom">
+
+                <div class="d-flex justify-content-around">
+                    <button type="button" class="btn btn-outline-dark" routerLink="/caisse">Encoder caisse</button>
+                    <button type="button" class="btn btn-outline-dark" routerLink="/facture">Nouvelle Facture</button>
+                    <button type="button" class="btn btn-outline-dark" routerLink="/client">Nouveau Client</button>
+                    <button type="button" class="btn btn-outline-dark" routerLink="/produit">Nouveau Produit</button>
+                    <button type="button" class="btn btn-outline-dark" routerLink="/fournisseur">Nouveau Fournisseur</button>
+                </div>
+            </div>
+            <div class="mt-5 col-md-12">
+
+            </div>
+
+            <h2 class="text-danger mb-4">Factures impayées</h2>
+            <div class="table-responsive tablescroll">
+
+                <table class="table border border-danger">
+                    <thead class="text-center">
+                        <tr>
+                            <th>#</th>
+                            <th>Date</th>
+                            <th>Client</th>
+                            <th>Montant HTVA</th>
+                            <th>Total TTC</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-center">
+                        <tr>
+                            <td>001</td>
+                            <td>21/01/2021</td>
+                            <td>ISASKOU</td>
+                            <td>12,87€</td>
+                            <td>14,00€</td>
+                            <td>
+                                <i class="bi bi-search"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>002</td>
+                            <td>21/01/2021</td>
+                            <td>ISASKOU</td>
+                            <td>12,87€</td>
+                            <td>14,00€</td>
+                            <td>
+                                <i class="bi bi-search"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>003</td>
+                            <td>21/01/2021</td>
+                            <td>ISASKOU</td>
+                            <td>12,87€</td>
+                            <td>14,00€</td>
+                            <td>
+                                <i class="bi bi-search"></i>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="mt-5 col-md-12"></div>
+        </main>
+    </div>
+</div>

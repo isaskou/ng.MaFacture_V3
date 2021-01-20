@@ -1,0 +1,27 @@
+<div class="container-fluid">
+    <div class="row">
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+            <div class="sidebar-sticky">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" routerLink="/dashboard" >
+                            Dashboard
+                        </a>
+                    </li>
+                    <hr/>
+                    <li class="nav-item" *ngFor="let navItem of sidebarItem">
+                        <a class="nav-link" [routerLink]="navItem.link" >
+                            {{navItem.name}}
+                        </a>
+                    </li>
+                    <hr/>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/parametre" >
+                            Paramètres
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
