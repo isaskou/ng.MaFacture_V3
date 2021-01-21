@@ -7,11 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidebarComponent implements OnInit {
   sidebarItem:Array<any>=[
-    { name: 'Caisse', link: '/caisse' },
-    { name: 'Factures', link:'/facture'},
-    { name: 'Produits', link:'/produit'},
-    { name: 'Clients', link:'/client'},
-    { name: 'Fournisseurs', link:'/fournisseur'}
+    { name: 'Caisse', link: '/caisse', icon:'bi bi-cash' },
+    { name: 'Factures', link:'/facture', icon:'bi bi-file-earmark-text'},
+    { name: 'Produits', link:'/produit', icon:'bi bi-cart4'},
+    { name: 'Clients', link:'/client', icon:'bi bi-people'},
+    { name: 'Fournisseurs', link:'/fournisseur', icon:'bi bi-shop'}
   ];
 
   constructor() { }

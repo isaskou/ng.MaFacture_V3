@@ -70,8 +70,11 @@ body {
     background-color: #B0C4DE;
     color: white;
   }
+
+  .dropdown-item{
+      font-size: 12px;
+  }
   
-  
-  
-  
-  
+  .dropdown-item:hover{
+    background-color: #B0C4DE;
+}
