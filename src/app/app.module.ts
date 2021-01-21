@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {MatSliderModule} from '@angular/material/slider';
 import {MatSidenavModule} from '@angular/material/sidenav';
+import {BsDropdownModule} from 'ngx-bootstrap/dropdown';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -20,6 +21,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { NavbarComponent } from './_components/protected/app-main/navbar/navbar.component';
 import { SidebarComponent } from './_components/protected/app-main/sidebar/sidebar.component';
 import { ContentComponent } from './_components/protected/app-main/content/content.component';
+import { DropdownmenuComponent } from './_components/protected/app-main/dropdownmenu/dropdownmenu.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +37,7 @@ import { ContentComponent } from './_components/protected/app-main/content/conte
     NavbarComponent,
     SidebarComponent,
     ContentComponent,
+    DropdownmenuComponent,
   ],
   imports: [
     BrowserModule,
@@ -44,7 +47,8 @@ import { ContentComponent } from './_components/protected/app-main/content/conte
     ReactiveFormsModule,
     HttpClientModule,
     MatSliderModule,
-    MatSidenavModule
+    MatSidenavModule,
+    BsDropdownModule
     
   ],
   providers: [
